@@ -1,0 +1,51 @@
+<!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" class="modal-content animate" action="" method="post" autocomplete="off"> -->
+    <form #userForm="ngForm" (ngSubmit)="OnSubmit(userForm)" class="modal-content animate" action="" method="post" autocomplete="off"> 
+      <!-- (ngSubmit)="onSubmit(userForm)" -->
+      <div class="logo-div">
+        <!-- <img  class="DivImg" src="assets\Pictures\Logo.png" alt="No Image"> -->
+        <h2></h2>
+    </div>
+  <div class="container">
+    <!-- <label for="uname"><b>Username</b></label> -->
+    <span class="SignUp">You have an account? </span><a style="text-decoration: none; color: #ffc107;" [routerLink]="['/Sign-In']" routerLinkActive='active' type="submit">Log-in</a>
+    <br>
+    <label for="psw"><b>FirstName</b></label>
+    <input type="text" [(ngModel)]="model.FirstName" placeholder="Enter first name" name="fname" required>
+  
+    <label for="psw"><b>LastName</b></label>
+    <input type="text" [(ngModel)]="model.LastName" placeholder="Enter last name" name="lname" required>
+  
+    <label for="psw"><b>Phone</b></label>
+    <input type="text" [(ngModel)]="model.LastName" placeholder="Enter last name" name="lname" required>
+  
+    <label for="psw"><b>Email</b></label>
+    <input type="email" [(ngModel)]="model.Email" placeholder="Enter Email" name="Eml" required>
+  
+    
+    <label for="psw"><b>Password</b></label>
+    <input #pass="ngModel" type="password" [(ngModel)]="model.Password" placeholder="Enter Password" name="psw" required>
+    
+    <div *ngIf="pass.invalid && (pass.touched || pass.dirty)">
+      <!-- <div *ngIf="pass.errors.required">שדה חובה*</div> -->
+      <!-- <div *ngIf="pass.errors.minlength">סיסמא קצרה מדי*</div> -->
+    </div>
+
+    <label for="psw"><b>Save credit card press Y/N</b></label>
+    <input type="email" [(ngModel)]="model.SavedCreditCard" placeholder="Enter Y/N" name="yn" required>
+  
+    <!-- <label for="psw"><b>Credit Card</b></label>
+    <input type="email" [(ngModel)]="model.Email" placeholder="Enter Email" name="Eml" required>
+   -->
+
+    <button [disabled]='!userForm.valid' type="submit" (click)="OnSubmitB(model)"  style="margin-bottom:40px;">Sign Up</button>
+    <!-- (click)="OnSubmit(model)" -->
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <div class="container" style="background-color:#f1f1f1; padding: 16px;" >      
+  </div>
+  </form>
+
+
+        <!-- <app-sign-up [ParentInput]="'abc'"></app-sign-up> -->

@@ -1,0 +1,17 @@
+C:\Users\user\Documents\MyWebsite\AppService\bin\Debug\net6.0\AppService.deps.json
+C:\Users\user\Documents\MyWebsite\AppService\bin\Debug\net6.0\AppService.dll
+C:\Users\user\Documents\MyWebsite\AppService\bin\Debug\net6.0\AppService.pdb
+C:\Users\user\Documents\MyWebsite\AppService\obj\Debug\net6.0\AppService.csproj.AssemblyReference.cache
+C:\Users\user\Documents\MyWebsite\AppService\obj\Debug\net6.0\AppService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\MyWebsite\AppService\obj\Debug\net6.0\AppService.AssemblyInfoInputs.cache
+C:\Users\user\Documents\MyWebsite\AppService\obj\Debug\net6.0\AppService.AssemblyInfo.cs
+C:\Users\user\Documents\MyWebsite\AppService\obj\Debug\net6.0\AppService.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\MyWebsite\AppService\obj\Debug\net6.0\AppService.dll
+C:\Users\user\Documents\MyWebsite\AppService\obj\Debug\net6.0\refint\AppService.dll
+C:\Users\user\Documents\MyWebsite\AppService\obj\Debug\net6.0\AppService.pdb
+C:\Users\user\Documents\MyWebsite\AppService\obj\Debug\net6.0\ref\AppService.dll
+C:\Users\user\Documents\MyWebsite\AppService\bin\Debug\net6.0\Common.dll
+C:\Users\user\Documents\MyWebsite\AppService\bin\Debug\net6.0\Common.pdb
+C:\Users\user\Documents\MyWebsite\AppService\obj\Debug\net6.0\AppService.csproj.CopyComplete
+C:\Users\user\Documents\MyWebsite\AppService\bin\Debug\net6.0\Repository.dll
+C:\Users\user\Documents\MyWebsite\AppService\bin\Debug\net6.0\Repository.pdb

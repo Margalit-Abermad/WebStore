@@ -1,0 +1,39 @@
+<!-- Products2 -->
+<tr *ngFor="let product of Products">
+      <td>  
+        <div  class="card" style="width: 30rem; height: 60rem; margin: 4%; font-size: 150%;">
+            <img class="card-img-top" src={{product.Image}} alt="Card image cap" style="margin-left: 10%; margin-top: 10%; margin-bottom: 15%; width: 80%;">
+            <hr>
+            <div class="card-body">
+              <h3 class="card-title">{{product.Name}}</h3>
+              <p class="card-text" style="margin-bottom: 10%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h4>Price: {{product.Price|currency}}</h4>
+              <br>
+              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="font-size: 100%; margin: 10%; padding-left: 7%; padding-right: 7%;">View</button>
+              <button (click)="AddCart(this.product)" class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="font-size: 100%;margin: 10%;">Add cart</button>
+            </div>
+        </div>
+    </td>
+</tr>
+
+
+<!-- <button (click)="Hello()">Click Me!</button> -->
+
+
+<!-- 
+<div  class="card" style="width: 30rem; height: 40rem; margin: 4%; font-size: 150%;">
+    <img class="card-img-top" src="..//../assets/71J9uIvfJbS._AC_UX535_.jpg" alt="Card image cap" style="margin-left: 10%; margin-top: 10%; margin-bottom: 15%; width: 80%;">
+    <hr>
+    <div class="card-body">
+      <h3 class="card-title">Card title</h3>
+      <p class="card-text" style="margin-bottom: 10%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       -->
+      <!-- <a href="#" class="btn btn-primary" style="width: 10rem; height: 4rem; margin: 10%;">Go somewhere</a>
+      <a href="#" class="btn btn-primary" style="width: 10rem; height: 4rem;">Go somewhere</a> -->
+      
+      <!-- <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="font-size: 100%; margin: 10%; padding-left: 7%; padding-right: 7%;">View</button>
+      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="font-size: 100%;margin: 10%;">Add Cart</button>
+    </div>
+</div> -->
+
+ 

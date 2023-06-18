@@ -1,0 +1,13 @@
+<form [formGroup]=myForm (ngSubmit)="submit()">
+    <input #c class="form-control" id="pwd" name="b" type="text" formControlName="name" placeholder="name"
+      [(ngModel)]="user1.Name" (change)="inputLogin(c.value)" />
+      
+    <!-- <div *ngIf="myForm.controls['name'].touched && myForm.controls['name'].errors?.required">שדה חובה</div> -->
+    <br />
+    <input class="form-control" id="pwd" name="b" type="text" formControlName="password" placeholder="password"
+      [(ngModel)]="user1.Password" />
+    <!-- <div *ngIf="myForm.controls['password'].touched && myForm.controls['password'].errors?.required">שדה חובה</div> -->
+    <br />
+    <button [disabled]='!myForm.valid' class="btn btn-danger" style="background-color: crimson;">login</button>
+  
+  </form>

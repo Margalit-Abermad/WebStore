@@ -1,0 +1,30 @@
+<h3 style="text-align: center;">your basket</h3>
+<hr>
+
+<h1>Total price: {{allPrice}}</h1>
+    <!-- <app-product [p]="prod"></app-product>  -->
+
+<!-- <button (click)="deletdProd(product)">delete product</button> -->
+<div >
+    <a [routerLink]="['/Payment']" routerLinkActive='active' class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+      <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+    </svg></a>
+    Go payment
+</div>
+
+
+<!-- <ul *ngFor="let prod of inOrder">
+  <img src="assets/{{prod.imgUrl}}" alt="Error">
+  <li>{{prod.name}}</li>
+  <li>{{prod.price | currency:"ILS"}}</li>
+  <li>{{prod.id}}</li>
+  <button (click)="DeleteBook()" style="color: red;"> הסר מהעגלה X</button>
+  <br><br>
+</ul>
+
+<p>סה"כ: {{sum | currency: "ILS"}}</p>
+<button [disabled]="isDisabled" class="btn btn-outline-warning"><a [routerLink]="['/payment']" routerLinkActive='active'> <img style="width:50px;" src="..//..//assets/PayPal.JPG" alt="">
+  <img style="width:50px;" src="..//..//assets/mastercard.JPG" alt="">
+  <img style="width:50px;" src="..//..//assets/visa.JPG" alt=""></a>
+  </button> -->

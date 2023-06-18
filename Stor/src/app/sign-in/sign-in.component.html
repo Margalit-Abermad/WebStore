@@ -1,0 +1,38 @@
+<!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" class="modal-content animate" action="" method="post" autocomplete="off"> -->
+    <form #userForm="ngForm" (ngSubmit)="OnSubmit(userForm)" class="modal-content animate" action="" method="post" autocomplete="off"> 
+        <!-- (ngSubmit)="onSubmit(userForm)" -->
+        <div class="logo-div">
+          <!-- <img  class="DivImg" src="assets\Pictures\Logo.png" alt="No Image"> -->
+          <h2></h2>
+      </div>
+    <div class="container">
+      <!-- <label for="uname"><b>Username</b></label> -->
+      <span class="SignUp">You have'nt an account? </span><a style="text-decoration: none; color: #ffc107;" [routerLink]="['/Sign-Up']" routerLinkActive='active' type="submit">Sign Up</a>
+      <br>
+
+      <label for="psw"><b>Email</b></label>
+      <input #c type="email" [(ngModel)]="model.Email" (change)="inputLogin(c.value)" placeholder="Enter Email" name="Eml" required>
+    
+      
+      <label for="psw"><b>Password</b></label>
+      <input type="password" [(ngModel)]="model.Password" placeholder="Enter Password" name="psw" required>
+       
+    
+
+      <!-- <label for="psw"><b>Credit Card</b></label>
+      <input type="email" [(ngModel)]="model.Email" placeholder="Enter Email" name="Eml" required>
+     -->
+  
+      <button [disabled]='!userForm.valid' type="submit" (click)="OnSubmitB(model)"  style="margin-bottom:40px;">Sign In</button>
+      <!-- (click)="OnSubmit(model)" -->
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1; padding: 16px;" >      
+    </div>
+    </form>
+  
+  
+          <!-- <app-sign-up [ParentInput]="'abc'"></app-sign-up> -->
+  

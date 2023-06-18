@@ -1,0 +1,17 @@
+/* #navNext{
+    position: fixed;
+    bottom:10px;
+    left: 10px;
+} */
+tr{
+    display: flex;
+    /* width: 20%; */
+    margin: 30px;
+    margin-top: 10px;
+    float: left;
+}
+
+
+
+
+
